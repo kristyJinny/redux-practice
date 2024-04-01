@@ -1,11 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { ContactForm } from './component/ContactForm';
-import {Col, Container, Row} from 'react-bootstrap';
-import { ContactList } from './component/ContactList';
-
 
 function App() {
   const dispatch = useDispatch();
@@ -23,14 +18,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="title">연락처</h1>{/* useSelector 로 */}
-      
-      <Container>
-        <Row>
-          <Col><ContactForm /></Col>
-          <Col><ContactList /></Col>
-        </Row>
-      </Container>
+      <h1>{count}</h1>{/* useSelector 로 */}
+      <button onClick={increase}>증가</button>
+      <button onClick={descrease}>감소</button>
     </div>
   );
 }

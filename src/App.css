@@ -4,3 +4,16 @@
 button + button {
   margin-left: 10px;
 }
+
+.title {
+  text-align: center;
+}
+[data-component="ContactList"] {
+  margin-top: 30px;
+}
+.contact-list {
+  padding: 20px 0;
+}
+[data-component="ContactItem"] {
+  margin: 5px 0;
+}
